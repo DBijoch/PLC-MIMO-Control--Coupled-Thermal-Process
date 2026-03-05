@@ -1,4 +1,4 @@
-# PLC MIMO Control: Heating-Cooling Station
+# PLC MIMO Control: Coupled Thermal Process
 
 ![Language](https://img.shields.io/badge/Language-PL-blue)
 ![PLC](https://img.shields.io/badge/PLC-Mitsubishi_FX5U-red)
@@ -94,4 +94,4 @@ Interfejs prezentuje na żywo wartości zadane (YZAD), procesowe zmienne mierzon
 Projekt ma charakter edukacyjny. Kod źródłowy udostępniany jest na licencji MIT.
 
 ---
-Projekt zespołowy został zrealizowany w ramach zajęć laboratoryjnych z przedmiotu **Projektowanie układów sterowania (PUST)** na Politechnice Warszawskiej.
+Projekt zespołowy został zrealizowany w ramach zajęć laboratoryjnych z przedmiotu **Projektowanie układów sterowania (PUST)** na Politechnice Warszawskiej (WEITI), semestr 25Z.
