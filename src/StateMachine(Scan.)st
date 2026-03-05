@@ -1,0 +1,41 @@
+TIM_MAIN(PT:= T#320s);
+
+CASE  Stan_MAIN  OF
+	0:
+	Stan_MAIN := 5;
+	IF NOT stan_ust THEN
+		TIM_MAIN.IN := 1;
+	END_IF;
+	
+	1:	
+	IF TIM_MAIN.Q THEN
+		y1_zad := 4000.0;
+		y2_zad := 3900.0;
+		TIM_MAIN.IN := 0;
+		Stan_MAIN := 3;		
+	END_IF;
+	
+			
+	3:
+	TIM_MAIN.In := 1;
+	IF TIM_MAIN.Q THEN
+		y2_zad := 4200.0;
+		TIM_MAIN.IN := 0;
+		Stan_MAIN := 4;
+	END_IF;
+	
+	4:
+	TIM_MAIN.In := 1;
+	IF TIM_MAIN.Q THEN
+		y1_zad := 3500.0;
+		TIM_MAIN.IN := 0;
+		Stan_MAIN := 0;		
+	END_IF;
+	5:
+		IF NOT Stan_ust THEN
+			TIM_MAIN.IN := 1;
+			Stan_MAIN := 1;
+		END_IF;
+	
+		
+END_CASE;
